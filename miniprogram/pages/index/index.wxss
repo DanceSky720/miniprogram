@@ -1,0 +1,77 @@
+.banners {
+  overflow: hidden;
+  border-radius: 20rpx;
+  margin: 0rpx 20rpx;
+}
+.banners swiper-item image {
+  height: 100%;
+  width: 100vw;
+}
+page {
+  margin-bottom: 100rpx;
+}
+.list_title {
+  margin: 10rpx 30rpx;
+  font-size: 50rpx;
+  color: var(--themeColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list_title .t1 {
+  flex: 1;
+}
+.list_title .t2 {
+  text-align: initial;
+  font-size: 30rpx;
+}
+.toplist {
+  margin: 10rpx 20rpx;
+}
+.toplist image {
+  box-shadow: 3px 3px #ececec;
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 15rpx;
+}
+.toplist .vertical .item {
+  align-items: center;
+  flex: 1;
+  margin-left: 10rpx;
+}
+.toplist .vertical .item .second {
+  margin: 10rpx;
+  font-size: 25rpx;
+  flex: 1;
+  text-align: left;
+}
+.topsong_scroll_view {
+  margin: 10rpx 20rpx;
+}
+.topsong_scroll_view .item {
+  margin: 10rpx;
+}
+.topsong_scroll_view .item image {
+  height: 200rpx;
+  width: 200rpx;
+}
+.bar {
+  border-radius: 20rpx;
+  background: white;
+  height: 100rpx;
+  width: 100vw;
+  border-top: 1px solid #c0c0c0;
+  position: fixed;
+  bottom: 0;
+}
+.bar image {
+  font-size: 75rpx;
+  color: var(--themeColor);
+  height: 80rpx;
+  width: 80rpx;
+  margin: 10rpx;
+}
+.bar .btn {
+  font-size: 60rpx;
+  margin: 16rpx 24rpx;
+}

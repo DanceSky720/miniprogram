@@ -1,0 +1,3 @@
+<view  class="info vertical" style="padding-top: calc({{n}}px + {{s}}px);">
+  <button type="primary" bindtap="loginBtnClick" class="btn">点击授权登录</button>
+</view>

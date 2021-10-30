@@ -1,0 +1,20 @@
+<navigator url="/pages/search/index">
+<search  placeholder="搜索" />
+</navigator>
+
+
+<block  wx:if="{{ready}}">
+
+
+<include src="swiper.wxml"/>
+
+<include src="topsong.wxml"/>
+
+<include src="topList.wxml"/>
+
+
+
+</block>
+
+<include src="musicbar.wxml"/>
+

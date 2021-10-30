@@ -1,0 +1,13 @@
+<popup_info id="list_setting" bind:continueEvent="registerin" title="{{songlist_.title}}">
+
+  <view slot="content">
+    <view bindtap="settingItemClick" wx:for="{{listsetting}}" data-index="{{index}}" wx:key="id">
+      <view class="setting_item">{{item.action}}</view>
+    </view>
+
+
+
+  </view>
+
+
+</popup_info>

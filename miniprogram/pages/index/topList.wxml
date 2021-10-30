@@ -1,0 +1,25 @@
+<view class="vertical" >
+  <view class="horizontal list_title">
+    <view class="t1">排行榜</view>
+    <navigator url="/pages/leaderboard/index?index=0">
+      <viewq class="t2">More...</viewq>
+    </navigator>
+
+  </view>
+
+
+  <view class="toplist horizontal" bindtap="toLeaderboard" data-index="{{--index}}" wx:for="{{toplist}}"
+    wx:if="{{index<4}}" wx:key="commentThreadId">
+
+    
+    <image src="{{item.coverImgUrl}}" />
+
+    <view class="vertical flex1">
+      <view class="item horizontal" wx:for="{{item.tracks}}" wx:for-item="tracks" wx:key="first">
+        <view class="song_name ">{{tracks.first}}</view>
+        <view class="second singer">- {{tracks.second}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>

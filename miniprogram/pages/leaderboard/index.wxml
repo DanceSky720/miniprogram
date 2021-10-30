@@ -1,0 +1,11 @@
+<view class="horizontal">
+
+
+  <include src="left.wxml" />
+
+
+  <include src="right.wxml" />
+
+  <popup_info ctext="好的" content="{{details.description}}" style="position: fixed;" id="info">
+  </popup_info>
+</view>

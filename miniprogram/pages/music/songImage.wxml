@@ -1,0 +1,10 @@
+<view class="picurl">
+
+  <image mode="heightFix center" src="{{song.picUrl}}" class="bg" />
+
+  <image class="music_pic {{playing?'rotate':''}} " src="{{song.picUrl}}"></image>
+  <view class="border " />
+
+  <view bindtap="play" id="play" class="iconfont  {{playing?'icon-pause':'icon-play'}} " />
+
+</view>

@@ -1,0 +1,37 @@
+<view class="wy_info">
+
+  <image class="bg" src="{{zyuserinfo.background}}" />
+  <image class="avatar" src="{{zyuserinfo.avatar}}" />
+  <view class="name">{{zyuserinfo.name}}</view>
+
+  <view class="mask border-radius horizontal song_name">
+    <view>动态 0</view>
+    <view>关注 0</view>
+    <view>粉丝 0</view>
+  </view>
+</view>
+<navigator url="/pages/info/index">
+  <view class="userinfo sw">
+    <view class="title">个人信息</view>
+  </view>
+</navigator>
+
+
+<scroll-view scroll-y="true" class="playlist">
+  <view class="horizontal">
+    <view class="title flex1">我的歌单 ({{playlist.length}})</view>
+    <view bindtap="playlistInfo" class="iconfont icon-edit title"></view>
+    <view bindtap="createSonglist" class="iconfont icon-add title"></view>
+  </view>
+
+
+  <view class="vertical">
+    <view bindtap="listItemClick1" wx:for="{{playlist}}" bindlongpress="listSetting" wx:key="index" class="horizontal" data-index="{{index}}">
+      <image class="playlistcoverimg" src="{{item.picture}}" />
+      <view class="vertical flex1">
+        <view class=" playlist_name">{{item.title}}</view>
+        <view class="m10 flex1">音乐:{{item.count}} / 播放:{{item.count}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

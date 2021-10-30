@@ -1,0 +1,29 @@
+<include wx:if="{{!logined}}" src="info.wxml" />
+
+<include wx:if="{{wylogin}}" src="wy_info.wxml" />
+<include wx:if="{{zylogin}}" src="zy_info.wxml" />
+
+
+
+<include src="popup_login_way.wxml" />
+
+
+<include src="popup_login_wyy.wxml" />
+
+<include src="popup_login_zy.wxml" />
+
+<include src="popup_register.wxml" />
+
+<include src="popup_list_setting.wxml" />
+
+
+<include src="popup_create_song_list.wxml" />
+
+<include src="popup_about.wxml" />
+
+
+<block>
+
+  <include src="little_thing.wxml" />
+
+</block>

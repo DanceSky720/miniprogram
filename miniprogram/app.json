@@ -1,0 +1,49 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/person/index",
+    "pages/music/index",
+    "pages/leaderboard/index",
+    "pages/shelf/index",
+    "pages/info/index",
+    "pages/search/index"
+  ],
+  "window": {
+    "backgroundColor": "#0080FF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0080FF",
+    "navigationBarTitleText": "自由音乐 网易api",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#0080FF",
+    "backgroundColor": "#FFFFFF",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "./image/home.png",
+        "iconPath": "./image/home_.png"
+      },
+
+      {
+        "pagePath": "pages/person/index",
+        "text": "个人",
+        "selectedIconPath": "./image/person.png",
+        "iconPath": "./image/person_.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "search": "./components/search/search",
+    "popup_info": "./components/popup_info/popup_info",
+    "w-cell-group": "./components/dist/w-cell-group/index",
+    "w-input": "./components/dist/w-input/index"
+
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

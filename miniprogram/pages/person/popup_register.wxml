@@ -1,0 +1,21 @@
+<popup_info id="register" btn="2" ctc="2" rtext="注册" bind:continueEvent="registerin" title="注册自由账号">
+
+  <view slot="content">
+    <w-cell-group>
+      <w-input type="bankCard" bindblur="iBlur" selectionStart="1" autoHeight="true" moneyKeyboardAlign="left"
+        placeholder="键入邮箱 📮" label="邮箱" labelSpan="1" bind:onChange="inputChange" data-type="r_email" />
+
+      <w-input bind:onChange="inputChange" data-type="r_password1" autoHeight="true" type="password" label="密码"
+        labelSpan="1" moneyKeyboardAlign="left" placeholder="键入密码 ⌨️" />
+
+        <w-input bind:onChange="inputChange" data-type="r_password2" autoHeight="true" type="password" label="密码"
+        labelSpan="1" moneyKeyboardAlign="left" placeholder="再次键入密码 ⌨️" />
+
+      <w-input bind:onChange="inputChange" data-type="r_name" autoHeight="true" type="bankCard" label="昵称" labelSpan="1"
+        moneyKeyboardAlign="left" placeholder="键入昵称 😊" />
+
+    </w-cell-group>
+  </view>
+
+
+</popup_info>

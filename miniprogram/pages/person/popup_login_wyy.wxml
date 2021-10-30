@@ -1,0 +1,16 @@
+<popup_info id="login_wyy" btn="2" ctc="2" rtext="完成" bind:continueEvent="loginContinueEvent" title="网易邮箱登录">
+
+  <view slot="content" style="margin-bottom: 10rpx;">
+    <w-cell-group>
+      <w-input type="bankCard" bindblur="iBlur" selectionStart="1" autoHeight="true" moneyKeyboardAlign="left"
+        placeholder="键入网易邮箱 📮" label="邮箱" labelSpan="1" bind:onChange="inputChange" data-type="email" />
+
+      <w-input bind:onChange="inputChange" data-type="password" autoHeight="true" type="password" label="密码"
+        labelSpan="1" moneyKeyboardAlign="left" placeholder="键入密码 ⌨️" />
+
+    </w-cell-group>
+
+  </view>
+
+
+</popup_info>

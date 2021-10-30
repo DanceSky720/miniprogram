@@ -1,0 +1,16 @@
+<view class="list_title" style="margin-top: 10rpx;">
+  <view class="t1">新歌上架</view>
+  <navigator url="/pages/shelf/index">
+    <view class="t2">More...</view>
+  </navigator>
+</view>
+<scroll-view class="topsong_scroll_view" style=" width: 100vw;" scroll-x="true">
+  <view class="horizontal">
+    <view class="item" wx:for="{{topsong}}" wx:if="{{index<20}}" bindtap="topsongItemClick" data-index="{{index}}"
+      wx:key="id">
+      <image src="{{item.album.blurPicUrl}}" />
+      <view class="song_name ">{{item.name}} </view>
+      <view class="singer "> {{item.artists[0].name}}</view>
+    </view>
+  </view>
+</scroll-view>

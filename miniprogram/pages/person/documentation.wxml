@@ -1,0 +1,37 @@
+<view class="box">
+
+  <view class="h1">声明</view>
+
+
+  <view class="p">本项目仅供学习使用,请尊重版权 请勿利用此项目从事商业行为或进行破坏版权行为</view>
+
+  <view class="p">该项目仅包含主页、新歌、排行榜、搜索🔍和音乐🎵播放功能,部分功能受限暂时无法完成</view>
+
+  <view class="p">
+    已部署的个人本地服务器地址:
+    <text user-select="true"> http://37104q568t.qicp.vip/</text>
+  </view>
+
+  <view class="p">
+    接口服务器来自
+    <text user-select="true"> https://github.com/
+      Binaryify/NeteaseCloudMusicApi</text>
+  </view>
+
+  <view class="p">
+    接口文档
+    <text user-select="true">https://neteasecloudmusicapi.vercel.app/#/</text>
+
+  </view>
+
+
+  <view class="p">
+    该项目地址:
+    <text user-select="true"> https://github.com
+      /DanceSky720/freemusic</text>
+  </view>
+  <view class="p1">
+    --舞天惊
+  </view>
+
+</view>

@@ -1,0 +1,49 @@
+/* component/search/search.wxss */
+.searchbar {
+  height: 88rpx;
+  padding: 20rpx 30rpx;
+  display: flex;
+  background: #0080FF;
+  margin-bottom: 50rpx;
+  box-shadow: 2px 2px rgb(236, 236, 236);
+}
+
+.content {
+  height: 88rpx;
+  padding: 0 18rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  border: 3rpx solid rgba(220, 222, 226, 1);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px rgb(236, 236, 236);
+}
+
+.search-icon {
+
+  width: 36rpx;
+  height: 36rpx;
+  margin-bottom: -4rpx;
+}
+
+.input {
+  flex: 1;
+  margin: 0 20rpx;
+
+}
+
+.delete-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.text-btn {
+  margin-left: 24rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  font-family: PingFangSC;
+  font-weight: 400;
+  color: #ffffff;
+}

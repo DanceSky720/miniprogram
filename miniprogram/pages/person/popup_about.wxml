@@ -1,0 +1,15 @@
+<popup_info id="about"  ctext="好的" ctc="2" title="关于本程序说明">
+
+<view slot="content">
+<scroll-view scroll-y="true" style="height: 50vh;">
+
+<!-- <rich-text nodes="{{documentation}}">
+  </rich-text> -->
+<include src="documentation.wxml"/>
+
+</scroll-view>
+
+</view>
+
+
+</popup_info>

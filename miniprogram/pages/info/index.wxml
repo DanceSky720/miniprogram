@@ -1,0 +1,12 @@
+<view class="horizontal align-items-center">
+  <image class="avatar" src="{{avatar}}"></image>
+  <view bindtap="selectAvatar" class="flex1 btn close">更换头像</view>
+</view>
+
+<include src="edit.wxml" />
+<include src="popup_avatars.wxml" />
+
+<view class="horizontal m10" style="position: fixed;bottom: 0;width: 100vw;">
+  <view bindtap="back" class="btn close">返回</view>
+  <view bindtap="sumbit" class="btn continue">提交</view>
+</view>

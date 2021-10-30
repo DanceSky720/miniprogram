@@ -1,0 +1,25 @@
+<search placeholder="搜索" bind:handleConfirm="musicSearch" />
+
+
+<view bindtap="itemClick" data-index="{{index}}" wx:for="{{songs}}" wx:key="id">
+
+  <view class="songs_item horizontal">
+
+    <image src="{{item.al.picUrl}}" />
+
+    <view class="right vertical">
+      <view class="song_name limit1" style="font-size: 36rpx;">{{item.name}}</view>
+
+
+      <view class=" horizontal">
+        <view style="margin-left: 10rpx;" class="singer" wx:for="{{item.ar}}" wx:key="name" wx:for-item="ar">
+          <view> {{ar.name}} <p wx:if="{{item.ar.length>1 && index< item.ar.length-1 }}"> / </p>
+          </view>
+
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+</view>

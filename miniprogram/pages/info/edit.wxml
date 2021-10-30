@@ -1,0 +1,20 @@
+<w-cell-group>
+
+  <w-input bind:onChange="inputChange" data-type="name" autoHeight="true" type="bankCard" label="昵称" labelSpan="1"
+    moneyKeyboardAlign="left" placeholder="昵称 😊" value="{{userinfo.name}}" />
+
+  <w-input type="bankCard" bindblur="iBlur" selectionStart="1" autoHeight="true" moneyKeyboardAlign="left"
+    placeholder="邮箱 📮" label="邮箱" labelSpan="1" bind:onChange="inputChange" data-type="email"
+    value="{{userinfo.email}}" />
+
+  <w-input bind:onChange="inputChange" data-type="old_password" autoHeight="true" type="password" label="密码"
+    labelSpan="1" moneyKeyboardAlign="left" placeholder="键入旧密码 ⌨️" />
+
+  <w-input bind:onChange="inputChange" data-type="password1" autoHeight="true" type="password" label="密码"
+    labelSpan="1" moneyKeyboardAlign="left" placeholder="键入新密码 ⌨️" />
+
+  <w-input bind:onChange="inputChange" data-type="password2" autoHeight="true" type="password" label="密码"
+    labelSpan="1" moneyKeyboardAlign="left" placeholder="再次新键入密码 ⌨️" />
+
+
+</w-cell-group>

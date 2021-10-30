@@ -1,0 +1,36 @@
+
+  <view class="horizontal">
+
+    <image  class="details_img" src="{{details.coverImgUrl}}" />
+
+    <view class="vertical flex1" style="padding: 18rpx; color: var(--themeColor);">
+      <view class="details_name">{{details.name}}</view>
+      <view>更新时间 :</view>
+      <view>{{details.updateTime}} </view>
+    </view>
+
+  </view>
+
+  <view bindtap="showInfo"  class="description iconfont icon-guanyu" />
+
+  <view class="horizontal icons">
+
+    <view class="item vertical flex1">
+      <view class="icon iconfont icon-jia" />
+      <view class="text">{{details.subscribedCount}}</view>
+    </view>
+    <view class="item vertical flex1">
+
+      <view class="icon iconfont icon-comments" />
+      <view class="text">{{details.commentCount}}</view>
+    </view>
+    <view class="item vertical flex1">
+      <view class="icon iconfont icon-share" />
+      <view class="text">{{details.shareCount}}</view>
+    </view>
+    <view class="item vertical flex1">
+      <view class="icon iconfont icon-download" />
+      <view class="text">download</view>
+    </view>
+
+  </view>

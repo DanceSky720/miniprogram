@@ -1,0 +1,28 @@
+<view class="mask {{maskState}}" wx:if="{{show}}" bindtap='close' />
+
+<view class="popup {{popupState}} vertical" wx:if="{{show}}">
+
+  <view class="title" wx:if="{{title !=0}}">
+    {{title}}
+
+  </view>
+
+  <view class="content flex1 horizontal" bindtap="clickToClose">
+    <slot name="content">
+
+    </slot>
+    <view wx:if="{{content!=0}}">
+      {{content}}
+    </view>
+  </view>
+
+  <view wx:if="{{btn==1}}" bindtap="close" class="close btn_base">{{ctext}}</view>
+  <view wx:else class="horizontal btn2">
+
+    <view bindtap="close" class="close1 btn_base flex1">{{ctext}}</view>
+    <view bindtap="continue" class="continue btn_base flex1">{{rtext}}</view>
+
+  </view>
+
+
+</view>

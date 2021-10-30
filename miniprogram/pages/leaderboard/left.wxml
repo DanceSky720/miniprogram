@@ -1,0 +1,15 @@
+<view class="list_of_rankings">
+
+  <scroll-view class="left" scroll-y="true">
+
+    <view class="title">云音乐榜单</view>
+
+    <view wx:for="{{toplist}}" wx:key="id" class="item vertical {{item.alive?'alive':''}}" bindtap="rankItemClick"
+      data-index="{{index}}" data-id="{{item.id}}">
+      <image src="{{item.coverImgUrl}}" />
+
+    </view>
+
+  </scroll-view>
+
+</view>

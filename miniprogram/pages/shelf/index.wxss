@@ -1,0 +1,47 @@
+.title {
+  color: var(--themeColor);
+  font-size: 42rpx;
+  margin: 16rpx 20rpx;
+  padding: 10rpx;
+  border-bottom: 2px solid rgba(0, 128, 255, 0.74);
+}
+.title p {
+  font-size: 30rpx;
+  margin: 0 5rpx;
+}
+page {
+  margin-bottom: 90rpx;
+}
+.allshow {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  padding: 16rpx;
+}
+.allshow .item image {
+  width: 18vw;
+  height: 18vw;
+  margin: 1vw;
+}
+.allshow .item .singer {
+  font-size: 26rpx;
+}
+.pagination {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  height: 90rpx;
+  background: #fdfdfd;
+  margin-bottom: 16rpx;
+  font-size: 32rpx;
+}
+.pagination view {
+  color: var(--themeColor);
+  flex: 1;
+  border-radius: 16rpx;
+  margin: 5rpx;
+  border: 1rpx solid var(--themeColor);
+}

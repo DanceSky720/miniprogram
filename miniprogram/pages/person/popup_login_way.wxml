@@ -1,0 +1,12 @@
+<popup_info id="login" ctext="取消" title="请选择登录方式">
+
+
+
+  <view slot="content">
+    <view wx:for="{{loginWay}}" wx:key="id" bindtap="toLogin" data-index="{{--index}}" class="login_way horizontal">
+      <view style="color: {{item.color}};text-align: center;" class="icon iconfont {{item.icon}}" />
+      <view class="m10">{{item.text}}</view>
+    </view>
+  </view>
+
+</popup_info>

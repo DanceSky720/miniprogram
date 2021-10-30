@@ -1,0 +1,78 @@
+@import "./style/icon.wxss";
+
+
+
+
+page,
+view,
+text,
+navigator,
+image {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+page {
+  --themeColor: #0080FF;
+  font-size: 28rpx;
+  --musicName: #474747;
+  --singerName: #808080;
+  color:  #474747;
+}
+
+image {
+  width: 100%;
+  border-radius: 20rpx;
+}
+
+.song_name {
+  color: var(--musicName);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.singer {
+  color: var(--singerName);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.limit1 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex1{
+  flex: 1;
+ 
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.border-radius{
+  border-radius:20rpx
+}
+
+.m10{
+  margin: 10rpx;
+}
+

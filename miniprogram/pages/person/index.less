@@ -1,0 +1,208 @@
+page {
+    background: rgb(245, 244, 244);
+}
+
+.info {
+    background: var(--themeColor);
+    width: 100vw;
+    height: 30vh;
+    align-items: center;
+
+    .btn {
+        width: 50vw;
+        margin:  auto;
+        border-radius: 20rpx;
+    }
+}
+
+.song_name {
+    font-size: 34rpx;
+}
+
+.login_way {
+    align-content: center;
+    justify-content: center;
+
+    .icon {
+        font-size: 56rpx;
+        margin: 10rpx;
+    }
+}
+
+@avatarPx: 200rpx;
+@bgHeight: 34vh;
+@playlistHeight: 28vh;
+@itemWidth: 92vw;
+@mlf: calc((100vw - @itemWidth) / 2);
+
+.wy_info {
+    position: relative;
+    height: @bgHeight;
+    margin-bottom: 6vh;
+
+    .bg {
+        z-index: 0;
+        position: absolute;
+        height: @bgHeight;
+    }
+
+    .avatar {
+        width: @avatarPx;
+        height: @avatarPx;
+        left: calc(50vw - (@avatarPx / 2));
+        top: calc(@bgHeight * 0.2);
+        position: absolute;
+        z-index: 20;
+        border-radius: 360rpx;
+    }
+
+    .name {
+        position: absolute;
+        width: 100%;
+        font-size: 50rpx;
+        top: calc((@bgHeight * 0.2) + @avatarPx);
+        color: white;
+        margin: 0 auto;
+        z-index: 20;
+        text-align: center;
+        text-shadow: 2rpx 2rpx rgba(0, 128, 255, 0.678);
+    }
+
+    .mask {
+        width: 90vw;
+        margin: 0 auto;
+        z-index: 20;
+        z-index: 15;
+        top: calc(30vh);
+        position: relative;
+        height: 8vh;
+        background: white;
+        box-shadow: 10rpx 10rpx rgb(235, 234, 234);
+        justify-content: center;
+        align-items: center;
+
+        view {
+            font-size: 36rpx;
+            flex: 1;
+            text-align: center;
+        }
+    }
+
+
+}
+
+.userinfo {
+  
+    width: @itemWidth;
+    margin: 20rpx auto;
+    height: 90rpx;
+    line-height: 90rpx;
+    z-index: 15;
+    background: white;
+    border-radius: 20rpx;
+    padding-left: 10rpx;
+
+    .title {
+        align-items: center;
+        padding-left: 10rpx;
+        margin: 10rpx;
+        font-size: 42rpx;
+        color: var(--themeColor);
+    }
+}
+
+
+
+.playlist {
+    height: @playlistHeight;
+    // padding: 10rpx;
+    width: @itemWidth;
+    margin: 0 auto;
+    z-index: 15;
+    background: white;
+    border-radius: 20rpx;
+
+    .title {
+        align-items: center;
+        padding: 8rpx;
+        margin: 16rpx;
+        font-size: 42rpx;
+        color: var(--themeColor);
+    }
+ 
+}
+
+.login_out {
+    width: 90vw;
+    margin: 2vh 5vw;
+    height: 90rpx;
+    line-height: 90rpx;
+    background: var(--themeColor);
+    color: white;
+    text-align: center;
+    font-size: 40rpx;
+    border-radius: 20rpx;
+}
+
+.sw {
+    box-shadow: 3px 3px rgb(236, 236, 236);
+}
+
+
+
+
+.playlistcoverimg {
+    height: 100rpx;
+    width: 100rpx;
+    margin: 10rpx 20rpx;
+}
+
+.playlist_name {
+    font-size: 36rpx;
+    margin: 10rpx;
+}
+
+.sbtn{
+    background: white;
+    color: var(--themeColor);
+    width: 100rpx;
+    text-align: left;
+    padding: 0;
+    font-size: 42rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+}
+.sbtn::after{
+    border:0rpx solid white;
+}
+
+
+.box {
+    height: 350px;
+}
+
+
+.p {
+    font-size: 22px;
+    text-align: left;
+    margin: 12px;
+}
+.p1 {
+    font-size: 22px;
+    text-align: right;
+    margin: 12px;
+}
+
+.h1 {
+    text-align: center;
+    color: #0080FF;
+    margin: 10px;
+    font-size: 60rpx;
+}
+
+.setting_item{
+    margin: 10rpx;
+    padding: 10rpx;
+    color: #0080ffc0;
+    font-size: 40rpx;
+}

@@ -1,0 +1,9 @@
+<popup_info id="popup_avatar" title="选择头像">
+
+  <scroll-view slot="content" scroll-y="true" style="height: 50vh;">
+    <view class="content">
+      <image class="s_avatar" bindtap="itemClick"wx:for="{{avatars}}" data-avatar="{{item.avatar}}"  wx:key="cid" src="{{item.avatar}}" />
+    </view>
+  </scroll-view>
+
+</popup_info>

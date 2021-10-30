@@ -1,0 +1,20 @@
+<view class="guess_like">
+
+  <view class="title">
+    猜你喜欢
+  </view>
+
+  <scroll-view scroll-x="true">
+    <view class="horizontal">
+      <view wx:for="{{similar}}" wx:key="id" bindtap="similarItemClick" data-index="{{index}}" class="item vertical">
+        <image src="{{item.album.blurPicUrl}}" />
+        <view class="limit1">{{item.name}}</view>
+        <view class="limit1" >{{item.artists[0].name}}</view>
+      </view>
+
+    </view>
+
+  </scroll-view>
+
+
+</view>

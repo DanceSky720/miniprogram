@@ -1,0 +1,22 @@
+<view class=" play_all">
+  <p class="iconfont icon-play1" />播放全部 (共{{details.tracks.length}}首)
+</view>
+
+<view class="song" bindtap="listItemClick" data-index="{{index}}" wx:for="{{details.tracks}}" wx:key="id">
+
+  <view class="horizontal item">
+
+    <view class="song_name tracks_index">{{index+1}} </view>
+
+    <view class="vertical flex1">
+      <view class="song_name tracks_name"> {{item.name}}</view>
+      <view class="horizontal ">
+        <view style="margin-left: 10rpx;" class="singer" wx:for="{{item.ar}}" wx:key="name" wx:for-item="ar">
+          <view> {{ar.name}} <p wx:if="{{item.ar.length>1 && index< item.ar.length-1 }}"> / </p>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

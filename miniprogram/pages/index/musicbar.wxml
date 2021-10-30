@@ -1,0 +1,13 @@
+<view class="bar horizontal align-items-center">
+
+  <image bindtap="toMusic" src="{{song.picUrl}}"
+    class="iconfont   {{song.picUrl==''||song.picUrl==null?'icon-mic':''}} " />
+
+
+  <view bindtap="toMusic" class="flex1">
+    <p style="font-size: 30rpx;" class="song_name">{{song.title}} {{song.picUrl==''||song.picUrl==null?'欢迎':''}} </p>
+    <p style="font-size: 26rpx;" class="singer">{{song.singer}}</p>
+
+  </view>
+  <view bindtap="play" class="btn iconfont  {{playing?'icon-pause':'icon-play'}} " />
+</view>

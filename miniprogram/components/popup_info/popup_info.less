@@ -1,0 +1,156 @@
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.45);
+    animation-duration: 0.15s;
+    animation-timing-function: ease-out;
+}
+
+.mask_show {
+    animation-name: mask_show;
+}
+
+.mask_hide {
+    animation-name: mask_hide;
+}
+
+.popup {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 30;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    background: rgb(255, 255, 255);
+    width: 98vw;
+    margin: 1vw;
+    z-index: 20;
+    bottom: 0;
+    border-radius: 20rpx;
+    transition: all 150ms ease-out;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+        width: 100%;
+        padding: 10rpx;
+        color: var(--musicName);
+        text-align: center;
+        font-size: 40rpx;
+        padding: 14rpx;
+    }
+
+
+}
+
+.title {
+    height: 80rpx;
+    color: var(--themeColor);
+    text-align: center;
+    font-size: 44rpx;
+    margin: 20rpx 0 0 0;
+}
+
+
+.close {
+    margin: 14rpx 12rpx 12rpx 12rpx;
+    width: 96%;
+    //background: #F0F0F0;
+    background: var(--themeColor);
+    // color: #323232;
+    color: white;
+}
+
+.btn2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+.continue {
+    margin: 2%;
+    width: 48%;
+    background: var(--themeColor);
+    color: white;
+
+}
+
+.btn_base {
+    line-height: 90rpx;
+    font-weight: normal;
+    border-radius: 20rpx;
+    align-items: center;
+    font-size: 42rpx;
+    text-align: center;
+    height: 90rpx;
+}
+
+
+.close1 {
+    margin: 2%;
+    width: 48%;
+    background: #F0F0F0;
+    color: #323232;
+}
+
+
+
+.popup_show {
+    animation-name: popup_show;
+}
+
+.popup_hide {
+    animation-name: popup_hide;
+}
+
+
+
+
+@keyframes popup_show {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 0rpx;
+
+    }
+}
+
+@keyframes popup_hide {
+    from {
+        bottom: 0rpx;
+    }
+
+    to {
+        bottom: -100%;
+    }
+}
+
+
+@keyframes mask_show {
+    from {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.45);
+    }
+}
+
+@keyframes mask_hide {
+    0% {
+        background: rgba(0, 0, 0, 0.45);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 0);
+    }
+}

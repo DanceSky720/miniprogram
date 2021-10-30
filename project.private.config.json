@@ -1,0 +1,48 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "search",
+          "pathName": "pages/search/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "music",
+          "pathName": "pages/music/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "leaderboard",
+          "pathName": "pages/leaderboard/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "person",
+          "pathName": "pages/person/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "info",
+          "pathName": "pages/info/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

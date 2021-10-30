@@ -1,0 +1,12 @@
+.songs_item {
+  margin: 10rpx;
+}
+.songs_item image {
+  margin: 5rpx;
+  height: 100rpx;
+  width: 100rpx;
+}
+.songs_item .right {
+  flex: 1;
+  margin-left: 20rpx;
+}

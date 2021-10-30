@@ -1,0 +1,10 @@
+<view bindtap="about" class="userinfo sw">
+  <view class="title">关于</view>
+</view>
+
+<view class="userinfo sw horizontal">
+  <view class="title horizontal"> <button open-type="contact" class="sbtn">客服</button>/ <button class="sbtn" open-type="feedback">反馈</button></view>
+</view>
+
+
+<view wx:if="{{logined}}" bindtap="logout" class="login_out sw">退出登录</view>

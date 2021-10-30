@@ -1,0 +1,16 @@
+<popup_info id="createlist" btn="2" ctc="2" rtext="完成" bind:continueEvent="toCreateList" title="创建歌单">
+
+<view slot="content" style="margin-bottom: 10rpx;">
+  <w-cell-group>
+    <w-input type="bankCard" bindblur="iBlur" selectionStart="1" autoHeight="true" moneyKeyboardAlign="left"
+      placeholder="键入歌单标题 📝" label="标题" labelSpan="1" bind:onChange="inputChange" data-type="title" />
+
+    <w-input bind:onChange="inputChange" data-type="details" autoHeight="true" type="bankCard" label="描述"
+      labelSpan="1" moneyKeyboardAlign="left" placeholder="键入歌单描述 📌" />
+
+  </w-cell-group>
+
+</view>
+
+
+</popup_info>

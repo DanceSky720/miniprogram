@@ -1,0 +1,30 @@
+<view class="wy_info">
+
+  <image class="bg" src="{{userinfo.backgroundUrl}}" />
+  <image class="avatar" src="{{userinfo.avatarUrl}}" />
+  <view class="name">{{userinfo.nickname}}</view>
+
+  <view class="mask border-radius horizontal song_name">
+    <view>动态 {{userinfo.eventCount}}</view>
+    <view>关注 {{userinfo.follows}}</view>
+    <view>粉丝 {{userinfo.followeds}}</view>
+  </view>
+
+
+</view>
+
+
+<scroll-view scroll-y="true" class="playlist">
+  <view class="title">我的歌单 ({{playlist.length}})</view>
+
+  <view class="vertical">
+    <view wx:for="{{playlist}}" wx:key="index" class="horizontal" data-index="{{index}}">
+      <image class="playlistcoverimg" src="{{item.coverImgUrl}}" />
+      <view class="vertical flex1">
+        <view class=" playlist_name">{{item.name}}</view>
+        <view class="m10 flex1">音乐:{{item.trackCount}} / 播放:{{item.playCount}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+

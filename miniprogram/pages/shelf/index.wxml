@@ -1,0 +1,34 @@
+<view class="title">热门新碟</view>
+<view class="allshow">
+
+  <view bindtap="topItemClick" data-index="{{index}}" wx:for="{{topsong}}" wx:if="{{index<10}}" class="vertical item" wx:key="id">
+    <image src="{{item.album.blurPicUrl}}" />
+    <view class="song_name">{{item.name}}</view>
+    <view class="singer">{{item.artists[0].name}}</view>
+  </view>
+
+</view>
+
+
+<view class="title">全部新碟
+  <p bindtap="typeChoose" data-index="{{index}}" wx:for="{{typelist}}" data-type="{{item.type}}" wx:key="id">
+    {{item.text}}</p>
+</view>
+
+<view class="allshow">
+
+  <view bindtap="allItemClick" data-index="{{index}}" wx:for="{{topsong1}}" wx:if="{{index>=cindex*size && index<(cindex+1)*size}}" class="vertical item" wx:key="id">
+    <image src="{{item.album.blurPicUrl}}" />
+    <view class="song_name">{{item.name}}</view>
+    <view class="singer">{{item.artists[0].name}}</view>
+  </view>
+
+</view>
+
+<view class="pagination horizontal">
+  <view bindtap="change" data-to="0">首页</view>
+  <view bindtap="change" data-mun="-1">上一页</view>
+  <view>{{(cindex +1)*size}}/{{topsong1.length}}</view>
+  <view bindtap="change" data-mun="1">下一页</view>
+  <view bindtap="change" data-to="{{(topsong1.length/size)-1}}">末页</view>
+</view>

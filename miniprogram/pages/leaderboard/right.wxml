@@ -1,0 +1,9 @@
+<scroll-view wx:if="{{details.id>0}}" enable-flex="true" scroll-y="true" class="list_details vertical">
+
+
+  <include src="rightTop.wxml" />
+
+  <include src="rightBottom.wxml" />
+
+
+</scroll-view>

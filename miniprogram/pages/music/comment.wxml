@@ -1,0 +1,40 @@
+<scroll-view class="hotComments" scroll-y="true">
+
+  <view class="comment_title">
+    热门评论
+    <p class="iconfont  icon-comments"> </p>
+    <p style="font-size: 36rpx;"> 共 {{hotComments.length}} 条 </p>
+
+  </view>
+
+
+  <view class="hot_comments horizontal" wx:for="{{hotComments}}" wx:key="commentId">
+
+    <view class="item_left">
+      <image src="{{item.user.avatarUrl}}" />
+    </view>
+
+    <view class="item_right vertical">
+
+      <view class="content">
+        <p>{{item.user.nickname}} </p> :
+        {{item.content}}
+      </view>
+
+      <view class="comment_bottom horizontal">
+        <view class="time">
+          {{item.time}}
+        </view>
+        <view class="like">
+          <p style="color: var(--themeColor);" class=" iconfont  icon-like"></p>
+          {{item.likedCount}}
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+
+</scroll-view>
+

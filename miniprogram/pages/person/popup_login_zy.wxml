@@ -1,0 +1,17 @@
+<popup_info id="login_zy" btn="2" ctc="2" rtext="完成" bind:continueEvent="zylogin" title="自由账号登录">
+
+  <view slot="content">
+    <w-cell-group>
+      <w-input type="bankCard" bindblur="iBlur" selectionStart="1" autoHeight="true" moneyKeyboardAlign="left"
+        placeholder="键入自由账号 📮" label="邮箱" labelSpan="1" bind:onChange="inputChange" data-type="email" />
+
+      <w-input bind:onChange="inputChange" data-type="password" autoHeight="true" type="password" label="密码"
+        labelSpan="1" moneyKeyboardAlign="left" placeholder="键入密码 ⌨️" />
+
+    </w-cell-group>
+    <view bindtap="toRegister" style="text-align: right; color: #0080FF;font-size: 30rpx;margin: 10rpx;">前往注册...</view>
+
+  </view>
+
+
+</popup_info>

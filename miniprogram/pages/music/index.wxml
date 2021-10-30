@@ -1,0 +1,8 @@
+<include src="songImage.wxml" />
+
+<block wx:if="{{loaded}}">
+
+  <include src="similar.wxml" />
+
+  <include src="comment.wxml" />
+</block>
